@@ -3,7 +3,7 @@
 """
 Created on Sat Apr 10 10:48:27 2021
 
-@author: user
+@author: David_Chu
 """
 
 import pymysql
