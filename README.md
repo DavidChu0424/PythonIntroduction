@@ -1,3 +1,8 @@
+1. Python Introduction for the first contact the computer language.
+2. Provide the example code about the Bank system and connect with the Database(MySQL) for learning helpful.  
+
+
+Directory
 - Python install for Windows (Python 3.9.2)
 - Anaconda install for Windows (Spyder4)
 - Python
