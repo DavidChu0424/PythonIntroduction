@@ -1,7 +1,7 @@
 # PythonIntroduction
 Python install for Windows (Python 3.9.2)
 Anaconda install for Windows (Spyder4)
-Python 
+Python
   - Package Install (Pip install) 
   - Common
   - Data Type 
