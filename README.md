@@ -15,5 +15,4 @@ Python
       - Inheritance 
       - Abstract Class 
       - Polymorphism 
-
 Reference
