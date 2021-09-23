@@ -14,5 +14,6 @@ Python
       - Encapsulation 
       - Inheritance 
       - Abstract Class 
-      - Polymorphism 
+      - Polymorphism
+ 
 Reference
