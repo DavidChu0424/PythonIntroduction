@@ -2,7 +2,7 @@
 """
 Created on Thu Apr  8 21:35:41 2021
 
-@author: user
+@author: David_Chu
 """
 from bank import bank
 import Database
