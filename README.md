@@ -1,1 +1,18 @@
 # PythonIntroduction
+Python install for Windows (Python 3.9.2)
+Anaconda install for Windows (Spyder4)
+Python 
+  - Package Install (Pip install) 
+  - Common
+  - Data Type 
+  - Data Structure (Tuple(),List[], Set{}, dict{})
+  - Flow control 
+  - Module
+  - Exception 
+  - Object-oriented programming
+      - Class 
+      - Encapsulation 
+      - Inheritance 
+      - Abstract Class 
+      - Polymorphism 
+Reference
