@@ -4,7 +4,7 @@
 
 Directory
 - Python install for Windows (Python 3.9.2)
-- Anaconda install for Windows (Spyder4)
+- Visual Studio Code
 - Python
 - Package Install (Pip install) 
 - Common
