@@ -18,6 +18,6 @@ Directory
 - Class 
 - Encapsulation 
 - Inheritance 
-- Abstract Class 
+- Abstract Method 
 - Polymorphism 
 - Reference
