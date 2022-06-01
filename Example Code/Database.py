@@ -13,7 +13,7 @@ db_settings = {
     "host": "127.0.0.1",
     "port": 3306,
     "user": "root",
-    "password": "admin",
+    "password": "Aa123456",
     "db": "bankaccount",
     "charset": "utf8"
 }
@@ -110,7 +110,7 @@ def passwordserch(value1):
              value = (value1)
              command = "SELECT Password FROM account WHERE AccountID LIKE '%s'" %value            
              cursor.execute(command)
-             result = cursor.fetchone()
+             result = cursor.fetchone()  # Return Response 
              print(value1 ,"密碼為",result)
              conn.commit()
              #資料表相關操作
@@ -118,3 +118,21 @@ def passwordserch(value1):
     except Exception as ex:
             print(ex)
  
+# 刪除帳戶資料
+def delete(value1):
+    try:
+    # 建立Connection物件
+        conn = pymysql.connect(**db_settings)    
+    # 建立Cursor物件
+        
+        with conn.cursor() as cursor:
+             value = (value1)
+             command = "DELETE FROM account WHERE AccountID = '%s'"%value
+             cursor.execute(command)
+             #result = cursor.fetchall()
+             #print(result)
+             conn.commit()
+             #資料表相關操作
+        
+    except Exception as ex:
+            print(ex)

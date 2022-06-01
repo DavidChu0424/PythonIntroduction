@@ -12,11 +12,10 @@ class taiwanbank(bank):
         self.__username = username
         self.__password = password
         self.__balance = 0
-        self.__money = 0
         print("帳戶創建成功")       
         Database.insert(self.__username, self.__password,self.__balance)
         
-    def getbalance(self,username):
+    def getbalance(self):
         Database.serch(self.__username)
         #print("餘額為",self.__balance)
         return self.__balance
@@ -57,46 +56,55 @@ class taiwanbank(bank):
             Database.passwordchange(self.__password, self.__username)
             print("密碼修改成功")
 
+    def accountdelete(self):
+            Database.delete(self.__username)
+            print("帳戶刪除成功")
 
 ############# Test Code ###############
             
 #創建台灣銀行帳戶
-x = taiwanbank('David','Aa12345678')
+David = taiwanbank('David','Aa12345678')
 
 #取得餘額
-x.getbalance('David')
+David.getbalance()
 
 #存錢
-x.savemoney(6000)
+David.savemoney(6000)
 
 #領錢
-x.withdrawmoney(5000)
+David.withdrawmoney(5000)
 
 #忘記密碼
-x.passwordforget("David")
+David.passwordforget("David")
 
 #修改密碼
-x.passwordreset("David","Aa1234567","Aa123456789") #錯誤的密碼
-x.passwordreset("David","Aa12345678","Aa123456789") #正確的密碼
-x.passwordforget("David")
+David.passwordreset("David","Aa1234567","Aa123456789") #錯誤的密碼
+David.passwordreset("David","Aa12345678","Aa123456789") #正確的密碼
+David.passwordforget("David")
+
 
 
 #創建第二個台灣銀行帳戶           
-y = taiwanbank("Dennis","Bb12345678")
+Ricky = taiwanbank("Ricky","Bb12345678")
 
 #取得餘額
-y.getbalance("Dennis")
+Ricky.getbalance()
 
 #存錢
-y.savemoney(8000)
+Ricky.savemoney(8000)
 
 #領錢
-y.withdrawmoney(5000)
+Ricky.withdrawmoney(5000)
 
 #忘記密碼
-y.passwordforget("Dennis")
+Ricky.passwordforget("Dennis")  #錯誤的帳號
 
 #修改密碼
-y.passwordreset("David","Bb12345678","Aa123456789") #錯誤的帳號
-y.passwordreset("Dennis","Bb12345678","Aa123456789") #正確的帳號
-y.passwordforget("Dennis")
+Ricky.passwordreset("David","Bb12345678","Aa123456789") #錯誤的帳號
+Ricky.passwordreset("Ricky","Bb12345678","Aa123456789") #正確的帳號
+Ricky.passwordforget("Ricky")
+
+
+#刪除帳戶
+Ricky.accountdelete()
+David.accountdelete()
