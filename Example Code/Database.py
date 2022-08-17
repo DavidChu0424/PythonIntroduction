@@ -18,6 +18,7 @@ db_settings = {
     "charset": "utf8"
 }
 
+
 # 新建帳戶資料
 def insert(value1,value2,value3):
     try:
